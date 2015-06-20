@@ -275,6 +275,7 @@ bool MNotification::publish()
             // Only show the preview banner for new notifications
             hints.insert("x-nemo-preview-summary", hints.value("x-nemo-legacy-summary"));
             hints.insert("x-nemo-preview-body", hints.value("x-nemo-legacy-body"));
+            hints.insert("x-nemo-preview-icon", d->image);
         }
     }
 
